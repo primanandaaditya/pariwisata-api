@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "a2e3048f-4586-4276-baa0-447ceeb36484",
+		"name": "Pariwisata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1488374"
+	},
+	"item": [
+		{
+			"name": "kategori",
+			"item": [
+				{
+					"name": "kategori all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}kategori/kategori_all.php",
+							"host": [
+								"{{base_url}}kategori"
+							],
+							"path": [
+								"kategori_all.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kategori insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Sungai",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}kategori/kategori_insert.php",
+							"host": [
+								"{{base_url}}kategori"
+							],
+							"path": [
+								"kategori_insert.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kategori delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}kategori/kategori_delete.php",
+							"host": [
+								"{{base_url}}kategori"
+							],
+							"path": [
+								"kategori_delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "kategori edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Gunung edit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}kategori/kategori_edit.php",
+							"host": [
+								"{{base_url}}kategori"
+							],
+							"path": [
+								"kategori_edit.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tempat",
+			"item": [
+				{
+					"name": "tempat all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}tempat/tempat_all.php",
+							"host": [
+								"{{base_url}}tempat"
+							],
+							"path": [
+								"tempat_all.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tempat insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Sungai Ciliwung",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Gunung Gede, Gunung Pangrango",
+									"type": "text"
+								},
+								{
+									"key": "detail",
+									"value": "Ciliwung adalah sungai bersejarah yang membentang dari hulu di Bogor, meliputi kawasan Gunung Gede, Gunung Pangrango, dan Cisarua lalu mengalir ke hilir di pantai utara Jakarta. Sungai ini memiliki panjang 120 kilometer dengan luas Daerah Aliran Sungai (DAS) 387 kilometer persegi.",
+									"type": "text"
+								},
+								{
+									"key": "id_kategori",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-6.1204716",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "106.824816",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/primananda.arif/Pictures/Sungai Ciliwung.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}tempat/tempat_insert.php",
+							"host": [
+								"{{base_url}}tempat"
+							],
+							"path": [
+								"tempat_insert.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tempat edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Tempat",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "tempat",
+									"type": "text"
+								},
+								{
+									"key": "detail",
+									"value": "tempat",
+									"type": "text"
+								},
+								{
+									"key": "id_kategori",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/tempat/tempat_edit.php",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"tempat",
+								"tempat_edit.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tempat delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}tempat/tempat_delete.php",
+							"host": [
+								"{{base_url}}tempat"
+							],
+							"path": [
+								"tempat_delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tempat search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "key",
+									"value": "mall",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}tempat/tempat_search.php",
+							"host": [
+								"{{base_url}}tempat"
+							],
+							"path": [
+								"tempat_search.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tempat by kategori",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_kategori",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}tempat/tempat_by_kategori.php",
+							"host": [
+								"{{base_url}}tempat"
+							],
+							"path": [
+								"tempat_by_kategori.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tempat terdekat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "latitude",
+									"value": "-6.217253131321335",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "106.83015836191885",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/tempat/tempat_terdekat.php",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"tempat",
+								"tempat_terdekat.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
