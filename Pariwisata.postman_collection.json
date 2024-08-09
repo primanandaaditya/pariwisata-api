@@ -364,6 +364,221 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "User Except Admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}users/user_except_admin.php",
+							"host": [
+								"{{base_url}}users"
+							],
+							"path": [
+								"user_except_admin.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Admin",
+									"type": "text"
+								},
+								{
+									"key": "tipe",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "indonesiamerdeka",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "sukabumi",
+									"type": "text"
+								},
+								{
+									"key": "tempat",
+									"value": "sukabumi",
+									"type": "text"
+								},
+								{
+									"key": "tgllahir",
+									"value": "1988-08-03",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "pria",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}users/user_insert.php",
+							"host": [
+								"{{base_url}}users"
+							],
+							"path": [
+								"user_insert.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Edit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Dian",
+									"type": "text"
+								},
+								{
+									"key": "tipe",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "guest",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "sukabumi",
+									"type": "text"
+								},
+								{
+									"key": "tempat",
+									"value": "sukabumi",
+									"type": "text"
+								},
+								{
+									"key": "tgllahir",
+									"value": "1988-08-03",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "pria",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}users/user_insert.php",
+							"host": [
+								"{{base_url}}users"
+							],
+							"path": [
+								"user_insert.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}users/user_delete.php",
+							"host": [
+								"{{base_url}}users"
+							],
+							"path": [
+								"user_delete.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "Nita",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ab",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}users/login.php",
+							"host": [
+								"{{base_url}}users"
+							],
+							"path": [
+								"login.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
